@@ -13,7 +13,7 @@ const mainSections = [
 
 // API KEYS
 const OMDB_API_KEY = 'e449cb2d'; // OMDb API key
-const TMDB_API_KEY = 'YOUR_TMDB_API_KEY'; // <-- Replace with your TMDb API key
+const TMDB_API_KEY = '47cbba1c943d155246a15ab01fb2c339'; // <-- Replace with your TMDb API key
 
 // TMDb endpoints
 const TMDB_BASE = 'https://api.themoviedb.org/3';
@@ -108,3 +108,4 @@ document.querySelector('header h1').addEventListener('click', () => {
 });
 
 window.addEventListener('DOMContentLoaded', loadInitialMovies);
+
