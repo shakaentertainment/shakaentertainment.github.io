@@ -1,0 +1,204 @@
+:root {
+  --primary: #22223b;
+  --secondary: #4a4e69;
+  --accent: #9a8c98;
+  --background: #f2e9e4;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--background);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 1.5rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+#hero {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+#reviews {
+  padding: 2.5rem 0;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.reviews-grid article {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.07);
+  padding: 1.2rem;
+  transition: box-shadow 0.2s;
+}
+
+.reviews-grid article:hover {
+  box-shadow: 0 4px 16px rgba(34,34,59,0.15);
+}
+
+#contact {
+  background: var(--white);
+  padding: 2.5rem 0;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  font-size: 1rem;
+  background: var(--background);
+  resize: none;
+}
+
+form button {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+#formMessage {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--secondary);
+}
+
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Add to style.css for updates section */
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.updates-grid article {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.07);
+  padding: 1.2rem;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.updates-grid article img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.updates-grid article .update-content {
+  flex: 1;
+}
+
+.updates-grid article:hover {
+  box-shadow: 0 4px 16px rgba(34,34,59,0.15);
+}
+
+.update-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.15s;
+}
+.update-card-link:hover,
+.update-card-link:focus {
+  transform: translateY(-4px) scale(1.02);
+}
